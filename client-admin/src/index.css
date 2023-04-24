@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    height: 100vh;
+}
+
+hr{
+    height: 2px;
+    background-color: black;
+    margin-bottom: 7px;
+    margin-top: 2px;
+}
+
+.body-login{
+    height: 91vh;
+}
+
+.box-logo{
+    width: 700px;
+}
+
+.body-login::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 91vh;
+    opacity: .6;
+    z-index: -1;
+    background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/5523db5a-e2b2-497f-a88b-61f175c3dbad/114e0ccb-c7d7-4f53-976a-822fc9dff35e/ID-id-20230306-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+}
+
+.body-login::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 11%;
+    background: linear-gradient(180deg, transparent, black);
+    z-index: -1;
+}
+
+.hero{
+    height: 80vh;
+    color: yellow;
+    z-index: 9999;
+}
